@@ -126,7 +126,8 @@ class AnalizadorDeLenguaje:
         # Lógica de categorización de palabras
         
         if (self.anteriorPalabra == ''):
-            if (word[0] == '"' ):
+            tamano=len(word)
+            if (word[0] == '"' and word[tamano-1] != '"'):
                 self.anteriorPalabra='"'
                 self.cadena=word +" "
                 self.fila=row

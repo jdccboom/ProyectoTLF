@@ -1,98 +1,129 @@
 // Autómatas para las palabras
 digraph {
 	rankdir=LR
+	subgraph cluster_Comentarios_Bloque {
+		label="Category : Comentarios 
+Subcategory : Bloque 
+Autómatas"
+		color=blue
+		rankdir=LR
+		"q23_C-5-1" [label="q23_C-5-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_C-5-1" [label="q0_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q1_C-5-1" [label="q1_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q2_C-5-1" [label="q2_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q3_C-5-1" [label="q3_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q4_C-5-1" [label="q4_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q5_C-5-1" [label="q5_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q6_C-5-1" [label="q6_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q7_C-5-1" [label="q7_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q8_C-5-1" [label="q8_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q9_C-5-1" [label="q9_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q10_C-5-1" [label="q10_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q11_C-5-1" [label="q11_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q12_C-5-1" [label="q12_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q13_C-5-1" [label="q13_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q14_C-5-1" [label="q14_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q15_C-5-1" [label="q15_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q16_C-5-1" [label="q16_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q17_C-5-1" [label="q17_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q18_C-5-1" [label="q18_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q19_C-5-1" [label="q19_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q20_C-5-1" [label="q20_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q21_C-5-1" [label="q21_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q22_C-5-1" [label="q22_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q23_C-5-1" [label="q23_C-5-1" color=blue fontcolor=black shape=circle style=filled]
+		"q0_C-5-1" -> "q1_C-5-1" [label="%" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_C-5-1" -> "q2_C-5-1" [label="-" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q2_C-5-1" -> "q3_C-5-1" [label=">" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q3_C-5-1" -> "q4_C-5-1" [label=P arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q4_C-5-1" -> "q5_C-5-1" [label=r arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q5_C-5-1" -> "q6_C-5-1" [label=u arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q6_C-5-1" -> "q7_C-5-1" [label=e arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q7_C-5-1" -> "q8_C-5-1" [label=b arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q8_C-5-1" -> "q9_C-5-1" [label=a arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q9_C-5-1" -> "q10_C-5-1" [label=" " arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q10_C-5-1" -> "q11_C-5-1" [label=m arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q11_C-5-1" -> "q12_C-5-1" [label=u arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q12_C-5-1" -> "q13_C-5-1" [label=y arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q13_C-5-1" -> "q14_C-5-1" [label=" " arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q14_C-5-1" -> "q15_C-5-1" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q15_C-5-1" -> "q16_C-5-1" [label=e arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q16_C-5-1" -> "q17_C-5-1" [label=r arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q17_C-5-1" -> "q18_C-5-1" [label=i arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q18_C-5-1" -> "q19_C-5-1" [label=a arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q19_C-5-1" -> "q20_C-5-1" [label=" " arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q20_C-5-1" -> "q21_C-5-1" [label="<" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q21_C-5-1" -> "q22_C-5-1" [label="-" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q22_C-5-1" -> "q23_C-5-1" [label="%" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+	}
+	subgraph "cluster_Comentarios_Línea" {
+		label="Category : Comentarios 
+Subcategory : Línea 
+Autómatas"
+		color=blue
+		rankdir=LR
+		"q12_C-1-2" [label="q12_C-1-2" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_C-1-2" [label="q0_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q1_C-1-2" [label="q1_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q2_C-1-2" [label="q2_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q3_C-1-2" [label="q3_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q4_C-1-2" [label="q4_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q5_C-1-2" [label="q5_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q6_C-1-2" [label="q6_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q7_C-1-2" [label="q7_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q8_C-1-2" [label="q8_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q9_C-1-2" [label="q9_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q10_C-1-2" [label="q10_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q11_C-1-2" [label="q11_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q12_C-1-2" [label="q12_C-1-2" color=blue fontcolor=black shape=circle style=filled]
+		"q0_C-1-2" -> "q1_C-1-2" [label="-" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_C-1-2" -> "q2_C-1-2" [label=">" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q2_C-1-2" -> "q3_C-1-2" [label=J arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q3_C-1-2" -> "q4_C-1-2" [label=u arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q4_C-1-2" -> "q5_C-1-2" [label=a arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q5_C-1-2" -> "q6_C-1-2" [label=n arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q6_C-1-2" -> "q7_C-1-2" [label=" " arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q7_C-1-2" -> "q8_C-1-2" [label=D arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q8_C-1-2" -> "q9_C-1-2" [label=a arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q9_C-1-2" -> "q10_C-1-2" [label=v arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q10_C-1-2" -> "q11_C-1-2" [label=i arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q11_C-1-2" -> "q12_C-1-2" [label=d arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+	}
+	subgraph cluster_Desconocido_Desconocido {
+		label="Category : Desconocido 
+Subcategory : Desconocido 
+Autómatas"
+		color=blue
+		rankdir=LR
+		"q5_D-6-2" [label="q5_D-6-2" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_D-6-2" [label="q0_D-6-2" color=blue fontcolor=black shape=circle style=filled]
+		"q1_D-6-2" [label="q1_D-6-2" color=blue fontcolor=black shape=circle style=filled]
+		"q2_D-6-2" [label="q2_D-6-2" color=blue fontcolor=black shape=circle style=filled]
+		"q3_D-6-2" [label="q3_D-6-2" color=blue fontcolor=black shape=circle style=filled]
+		"q4_D-6-2" [label="q4_D-6-2" color=blue fontcolor=black shape=circle style=filled]
+		"q5_D-6-2" [label="q5_D-6-2" color=blue fontcolor=black shape=circle style=filled]
+		"q0_D-6-2" -> "q1_D-6-2" [label=0 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_D-6-2" -> "q2_D-6-2" [label=J arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q2_D-6-2" -> "q3_D-6-2" [label=u arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q3_D-6-2" -> "q4_D-6-2" [label=a arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q4_D-6-2" -> "q5_D-6-2" [label=n arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+	}
 	subgraph "cluster_Identificadores_identificador de clase" {
 		label="Category : Identificadores 
 Subcategory : identificador de clase 
 Autómatas"
 		color=blue
 		rankdir=LR
-		"q4_I-1-1" [label="q4_I-1-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_I-1-1" [label="q0_I-1-1" color=blue fontcolor=black shape=circle style=filled]
-		"q1_I-1-1" [label="q1_I-1-1" color=blue fontcolor=black shape=circle style=filled]
-		"q2_I-1-1" [label="q2_I-1-1" color=blue fontcolor=black shape=circle style=filled]
-		"q3_I-1-1" [label="q3_I-1-1" color=blue fontcolor=black shape=circle style=filled]
-		"q4_I-1-1" [label="q4_I-1-1" color=blue fontcolor=black shape=circle style=filled]
-		"q0_I-1-1" -> "q1_I-1-1" [label=C arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_I-1-1" -> "q2_I-1-1" [label=l arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q2_I-1-1" -> "q3_I-1-1" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q3_I-1-1" -> "q4_I-1-1" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Identificadores_identificador de método" {
-		label="Category : Identificadores 
-Subcategory : identificador de método 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q3_I-8-1" [label="q3_I-8-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_I-8-1" [label="q0_I-8-1" color=blue fontcolor=black shape=circle style=filled]
-		"q1_I-8-1" [label="q1_I-8-1" color=blue fontcolor=black shape=circle style=filled]
-		"q2_I-8-1" [label="q2_I-8-1" color=blue fontcolor=black shape=circle style=filled]
-		"q3_I-8-1" [label="q3_I-8-1" color=blue fontcolor=black shape=circle style=filled]
-		"q0_I-8-1" -> "q1_I-8-1" [label=M arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_I-8-1" -> "q2_I-8-1" [label=e arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q2_I-8-1" -> "q3_I-8-1" [label=t arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Operadores_Operador(es) de asignación" {
-		label="Category : Operadores 
-Subcategory : Operador(es) de asignación 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q1_O-2-4" [label="q1_O-2-4" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-2-4" [label="q0_O-2-4" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-2-4" [label="q1_O-2-4" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-2-4" -> "q1_O-2-4" [label="~" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Operadores_Operador(es) de asignación" {
-		label="Category : Operadores 
-Subcategory : Operador(es) de asignación 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q2_O-2-12" [label="q2_O-2-12" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-2-12" [label="q0_O-2-12" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-2-12" [label="q1_O-2-12" color=blue fontcolor=black shape=circle style=filled]
-		"q2_O-2-12" [label="q2_O-2-12" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-2-12" -> "q1_O-2-12" [label="~" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_O-2-12" -> "q2_O-2-12" [label="+" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Operadores_Operadores relacionales" {
-		label="Category : Operadores 
-Subcategory : Operadores relacionales 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q2_O-2-8" [label="q2_O-2-8" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-2-8" [label="q0_O-2-8" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-2-8" [label="q1_O-2-8" color=blue fontcolor=black shape=circle style=filled]
-		"q2_O-2-8" [label="q2_O-2-8" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-2-8" -> "q1_O-2-8" [label=M arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_O-2-8" -> "q2_O-2-8" [label=E arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Operadores_Operadores relacionales" {
-		label="Category : Operadores 
-Subcategory : Operadores relacionales 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q2_O-3-4" [label="q2_O-3-4" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-3-4" [label="q0_O-3-4" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-3-4" [label="q1_O-3-4" color=blue fontcolor=black shape=circle style=filled]
-		"q2_O-3-4" [label="q2_O-3-4" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-3-4" -> "q1_O-3-4" [label=I arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_O-3-4" -> "q2_O-3-4" [label=I arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Operadores_Separadores de sentencias" {
-		label="Category : Operadores 
-Subcategory : Separadores de sentencias 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q1_O-2-6" [label="q1_O-2-6" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-2-6" [label="q0_O-2-6" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-2-6" [label="q1_O-2-6" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-2-6" -> "q1_O-2-6" [label="/" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q4_I-6-1" [label="q4_I-6-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_I-6-1" [label="q0_I-6-1" color=blue fontcolor=black shape=circle style=filled]
+		"q1_I-6-1" [label="q1_I-6-1" color=blue fontcolor=black shape=circle style=filled]
+		"q2_I-6-1" [label="q2_I-6-1" color=blue fontcolor=black shape=circle style=filled]
+		"q3_I-6-1" [label="q3_I-6-1" color=blue fontcolor=black shape=circle style=filled]
+		"q4_I-6-1" [label="q4_I-6-1" color=blue fontcolor=black shape=circle style=filled]
+		"q0_I-6-1" -> "q1_I-6-1" [label=C arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_I-6-1" -> "q2_I-6-1" [label=l arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q2_I-6-1" -> "q3_I-6-1" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q3_I-6-1" -> "q4_I-6-1" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 	}
 	subgraph "cluster_Operadores_Símbolos de abrir" {
 		label="Category : Operadores 
@@ -100,10 +131,10 @@ Subcategory : Símbolos de abrir
 Autómatas"
 		color=blue
 		rankdir=LR
-		"q1_O-1-3" [label="q1_O-1-3" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-1-3" [label="q0_O-1-3" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-1-3" [label="q1_O-1-3" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-1-3" -> "q1_O-1-3" [label="{" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_O-6-3" [label="q1_O-6-3" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_O-6-3" [label="q0_O-6-3" color=blue fontcolor=black shape=circle style=filled]
+		"q1_O-6-3" [label="q1_O-6-3" color=blue fontcolor=black shape=circle style=filled]
+		"q0_O-6-3" -> "q1_O-6-3" [label="{" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 	}
 	subgraph "cluster_Operadores_Símbolos de abrir" {
 		label="Category : Operadores 
@@ -111,10 +142,10 @@ Subcategory : Símbolos de abrir
 Autómatas"
 		color=blue
 		rankdir=LR
-		"q1_O-2-2" [label="q1_O-2-2" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-2-2" [label="q0_O-2-2" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-2-2" [label="q1_O-2-2" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-2-2" -> "q1_O-2-2" [label="(" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_O-7-2" [label="q1_O-7-2" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_O-7-2" [label="q0_O-7-2" color=blue fontcolor=black shape=circle style=filled]
+		"q1_O-7-2" [label="q1_O-7-2" color=blue fontcolor=black shape=circle style=filled]
+		"q0_O-7-2" -> "q1_O-7-2" [label="(" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 	}
 	subgraph "cluster_Operadores_Símbolos de cerrar" {
 		label="Category : Operadores 
@@ -122,10 +153,10 @@ Subcategory : Símbolos de cerrar
 Autómatas"
 		color=blue
 		rankdir=LR
-		"q1_O-2-13" [label="q1_O-2-13" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-2-13" [label="q0_O-2-13" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-2-13" [label="q1_O-2-13" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-2-13" -> "q1_O-2-13" [label=")" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_O-7-4" [label="q1_O-7-4" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_O-7-4" [label="q0_O-7-4" color=blue fontcolor=black shape=circle style=filled]
+		"q1_O-7-4" [label="q1_O-7-4" color=blue fontcolor=black shape=circle style=filled]
+		"q0_O-7-4" -> "q1_O-7-4" [label=")" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 	}
 	subgraph "cluster_Operadores_Símbolos de cerrar" {
 		label="Category : Operadores 
@@ -133,51 +164,10 @@ Subcategory : Símbolos de cerrar
 Autómatas"
 		color=blue
 		rankdir=LR
-		"q1_O-5-1" [label="q1_O-5-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_O-5-1" [label="q0_O-5-1" color=blue fontcolor=black shape=circle style=filled]
-		"q1_O-5-1" [label="q1_O-5-1" color=blue fontcolor=black shape=circle style=filled]
-		"q0_O-5-1" -> "q1_O-5-1" [label="}" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Palabras reservadas_Palabra para decisión" {
-		label="Category : Palabras reservadas 
-Subcategory : Palabra para decisión 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q2_P-3-1" [label="q2_P-3-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_P-3-1" [label="q0_P-3-1" color=blue fontcolor=black shape=circle style=filled]
-		"q1_P-3-1" [label="q1_P-3-1" color=blue fontcolor=black shape=circle style=filled]
-		"q2_P-3-1" [label="q2_P-3-1" color=blue fontcolor=black shape=circle style=filled]
-		"q0_P-3-1" -> "q1_P-3-1" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_P-3-1" -> "q2_P-3-1" [label=i arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Palabras reservadas_Palabra reservada para bucle o ciclo" {
-		label="Category : Palabras reservadas 
-Subcategory : Palabra reservada para bucle o ciclo 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q2_P-2-1" [label="q2_P-2-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_P-2-1" [label="q0_P-2-1" color=blue fontcolor=black shape=circle style=filled]
-		"q1_P-2-1" [label="q1_P-2-1" color=blue fontcolor=black shape=circle style=filled]
-		"q2_P-2-1" [label="q2_P-2-1" color=blue fontcolor=black shape=circle style=filled]
-		"q0_P-2-1" -> "q1_P-2-1" [label=f arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_P-2-1" -> "q2_P-2-1" [label=r arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph "cluster_Valor de Asignación_Enteros" {
-		label="Category : Valor de Asignación 
-Subcategory : Enteros 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q3_V-8-4" [label="q3_V-8-4" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-8-4" [label="q0_V-8-4" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-8-4" [label="q1_V-8-4" color=blue fontcolor=black shape=circle style=filled]
-		"q2_V-8-4" [label="q2_V-8-4" color=blue fontcolor=black shape=circle style=filled]
-		"q3_V-8-4" [label="q3_V-8-4" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-8-4" -> "q1_V-8-4" [label=e arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_V-8-4" -> "q2_V-8-4" [label=n arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q2_V-8-4" -> "q3_V-8-4" [label=t arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_O-8-1" [label="q1_O-8-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_O-8-1" [label="q0_O-8-1" color=blue fontcolor=black shape=circle style=filled]
+		"q1_O-8-1" [label="q1_O-8-1" color=blue fontcolor=black shape=circle style=filled]
+		"q0_O-8-1" -> "q1_O-8-1" [label="}" arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 	}
 	subgraph "cluster_Valor de Asignación_Reales" {
 		label="Category : Valor de Asignación 
@@ -194,150 +184,20 @@ Autómatas"
 		"q1_V-7-1" -> "q2_V-7-1" [label=e arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 		"q2_V-7-1" -> "q3_V-7-1" [label=a arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 	}
-	subgraph cluster_Variable_Enteros {
+	subgraph cluster_Variable_Hexadecimal {
 		label="Category : Variable 
-Subcategory : Enteros 
+Subcategory : Hexadecimal 
 Autómatas"
 		color=blue
 		rankdir=LR
-		"q1_V-2-5" [label="q1_V-2-5" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-2-5" [label="q0_V-2-5" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-2-5" [label="q1_V-2-5" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-2-5" -> "q1_V-2-5" [label=0 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph cluster_Variable_Enteros {
-		label="Category : Variable 
-Subcategory : Enteros 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q1_V-2-9" [label="q1_V-2-9" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-2-9" [label="q0_V-2-9" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-2-9" [label="q1_V-2-9" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-2-9" -> "q1_V-2-9" [label=4 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph cluster_Variable_Enteros {
-		label="Category : Variable 
-Subcategory : Enteros 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q1_V-3-5" [label="q1_V-3-5" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-3-5" [label="q0_V-3-5" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-3-5" [label="q1_V-3-5" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-3-5" -> "q1_V-3-5" [label=2 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph cluster_Variable_Nombre {
-		label="Category : Variable 
-Subcategory : Nombre 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q12_V-1-2" [label="q12_V-1-2" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-1-2" [label="q0_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-1-2" [label="q1_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q2_V-1-2" [label="q2_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q3_V-1-2" [label="q3_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q4_V-1-2" [label="q4_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q5_V-1-2" [label="q5_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q6_V-1-2" [label="q6_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q7_V-1-2" [label="q7_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q8_V-1-2" [label="q8_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q9_V-1-2" [label="q9_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q10_V-1-2" [label="q10_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q11_V-1-2" [label="q11_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q12_V-1-2" [label="q12_V-1-2" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-1-2" -> "q1_V-1-2" [label=P arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_V-1-2" -> "q2_V-1-2" [label=r arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q2_V-1-2" -> "q3_V-1-2" [label=u arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q3_V-1-2" -> "q4_V-1-2" [label=e arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q4_V-1-2" -> "q5_V-1-2" [label=b arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q5_V-1-2" -> "q6_V-1-2" [label=a arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q6_V-1-2" -> "q7_V-1-2" [label=C arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q7_V-1-2" -> "q8_V-1-2" [label=i arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q8_V-1-2" -> "q9_V-1-2" [label=c arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q9_V-1-2" -> "q10_V-1-2" [label=l arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q10_V-1-2" -> "q11_V-1-2" [label=o arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q11_V-1-2" -> "q12_V-1-2" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph cluster_Variable_Nombre {
-		label="Category : Variable 
-Subcategory : Nombre 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q1_V-2-3" [label="q1_V-2-3" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-2-3" [label="q0_V-2-3" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-2-3" [label="q1_V-2-3" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-2-3" -> "q1_V-2-3" [label=i arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph cluster_Variable_Nombre {
-		label="Category : Variable 
-Subcategory : Nombre 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q5_V-4-1" [label="q5_V-4-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-4-1" [label="q0_V-4-1" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-4-1" [label="q1_V-4-1" color=blue fontcolor=black shape=circle style=filled]
-		"q2_V-4-1" [label="q2_V-4-1" color=blue fontcolor=black shape=circle style=filled]
-		"q3_V-4-1" [label="q3_V-4-1" color=blue fontcolor=black shape=circle style=filled]
-		"q4_V-4-1" [label="q4_V-4-1" color=blue fontcolor=black shape=circle style=filled]
-		"q5_V-4-1" [label="q5_V-4-1" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-4-1" -> "q1_V-4-1" [label=p arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_V-4-1" -> "q2_V-4-1" [label=r arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q2_V-4-1" -> "q3_V-4-1" [label=i arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q3_V-4-1" -> "q4_V-4-1" [label=n arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q4_V-4-1" -> "q5_V-4-1" [label=t arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph cluster_Variable_Nombre {
-		label="Category : Variable 
-Subcategory : Nombre 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q4_V-7-2" [label="q4_V-7-2" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-7-2" [label="q0_V-7-2" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-7-2" [label="q1_V-7-2" color=blue fontcolor=black shape=circle style=filled]
-		"q2_V-7-2" [label="q2_V-7-2" color=blue fontcolor=black shape=circle style=filled]
-		"q3_V-7-2" [label="q3_V-7-2" color=blue fontcolor=black shape=circle style=filled]
-		"q4_V-7-2" [label="q4_V-7-2" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-7-2" -> "q1_V-7-2" [label=r arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_V-7-2" -> "q2_V-7-2" [label=e arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q2_V-7-2" -> "q3_V-7-2" [label=a arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q3_V-7-2" -> "q4_V-7-2" [label=l arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph cluster_Variable_Nombre {
-		label="Category : Variable 
-Subcategory : Nombre 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q1_V-8-5" [label="q1_V-8-5" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-8-5" [label="q0_V-8-5" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-8-5" [label="q1_V-8-5" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-8-5" -> "q1_V-8-5" [label=x arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-	}
-	subgraph cluster_Variable_Nombre {
-		label="Category : Variable 
-Subcategory : Nombre 
-Autómatas"
-		color=blue
-		rankdir=LR
-		"q6_V-9-1" [label="q6_V-9-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-9-1" [label="q0_V-9-1" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-9-1" [label="q1_V-9-1" color=blue fontcolor=black shape=circle style=filled]
-		"q2_V-9-1" [label="q2_V-9-1" color=blue fontcolor=black shape=circle style=filled]
-		"q3_V-9-1" [label="q3_V-9-1" color=blue fontcolor=black shape=circle style=filled]
-		"q4_V-9-1" [label="q4_V-9-1" color=blue fontcolor=black shape=circle style=filled]
-		"q5_V-9-1" [label="q5_V-9-1" color=blue fontcolor=black shape=circle style=filled]
-		"q6_V-9-1" [label="q6_V-9-1" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-9-1" -> "q1_V-9-1" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_V-9-1" -> "q2_V-9-1" [label=y arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q2_V-9-1" -> "q3_V-9-1" [label=s arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q3_V-9-1" -> "q4_V-9-1" [label=t arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q4_V-9-1" -> "q5_V-9-1" [label=e arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q5_V-9-1" -> "q6_V-9-1" [label=m arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q3_V-2-1" [label="q3_V-2-1" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_V-2-1" [label="q0_V-2-1" color=blue fontcolor=black shape=circle style=filled]
+		"q1_V-2-1" [label="q1_V-2-1" color=blue fontcolor=black shape=circle style=filled]
+		"q2_V-2-1" [label="q2_V-2-1" color=blue fontcolor=black shape=circle style=filled]
+		"q3_V-2-1" [label="q3_V-2-1" color=blue fontcolor=black shape=circle style=filled]
+		"q0_V-2-1" -> "q1_V-2-1" [label=H arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_V-2-1" -> "q2_V-2-1" [label=2 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q2_V-2-1" -> "q3_V-2-1" [label=A arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 	}
 	subgraph cluster_Variable_Reales {
 		label="Category : Variable 
@@ -345,15 +205,15 @@ Subcategory : Reales
 Autómatas"
 		color=blue
 		rankdir=LR
-		"q4_V-7-4" [label="q4_V-7-4" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
-		"q0_V-7-4" [label="q0_V-7-4" color=blue fontcolor=black shape=circle style=filled]
-		"q1_V-7-4" [label="q1_V-7-4" color=blue fontcolor=black shape=circle style=filled]
-		"q2_V-7-4" [label="q2_V-7-4" color=blue fontcolor=black shape=circle style=filled]
-		"q3_V-7-4" [label="q3_V-7-4" color=blue fontcolor=black shape=circle style=filled]
-		"q4_V-7-4" [label="q4_V-7-4" color=blue fontcolor=black shape=circle style=filled]
-		"q0_V-7-4" -> "q1_V-7-4" [label=3 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q1_V-7-4" -> "q2_V-7-4" [label="." arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q2_V-7-4" -> "q3_V-7-4" [label=2 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
-		"q3_V-7-4" -> "q4_V-7-4" [label=5 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q4_V-7-3" [label="q4_V-7-3" color=blue fontcolor=black peripheries=2 shape=circle style=filled]
+		"q0_V-7-3" [label="q0_V-7-3" color=blue fontcolor=black shape=circle style=filled]
+		"q1_V-7-3" [label="q1_V-7-3" color=blue fontcolor=black shape=circle style=filled]
+		"q2_V-7-3" [label="q2_V-7-3" color=blue fontcolor=black shape=circle style=filled]
+		"q3_V-7-3" [label="q3_V-7-3" color=blue fontcolor=black shape=circle style=filled]
+		"q4_V-7-3" [label="q4_V-7-3" color=blue fontcolor=black shape=circle style=filled]
+		"q0_V-7-3" -> "q1_V-7-3" [label=3 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q1_V-7-3" -> "q2_V-7-3" [label="." arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q2_V-7-3" -> "q3_V-7-3" [label=2 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
+		"q3_V-7-3" -> "q4_V-7-3" [label=5 arrowhead=vee color=grey dir=forward fontcolor=black style=solid]
 	}
 }
