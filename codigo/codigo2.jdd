@@ -1,0 +1,18 @@
+Clss PruebaCiclos {
+	fr ( i ~ 0 / i ME 4 / i ~+ ) {
+		si ( i II 2 ) {
+			print ( i )
+		}
+	}
+	rea real ~ 3.25 
+	Met print ( ent x ) {
+		system ( x ) /
+	}
+}
+
+
+
+
+
+
+
