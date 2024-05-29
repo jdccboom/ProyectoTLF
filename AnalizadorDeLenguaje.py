@@ -361,7 +361,6 @@ class AnalizadorDeLenguaje:
             return False
         
         return True
-    
     def isVariable(self, texto):
         if not (self.isLetter(texto[0])):
             return False
