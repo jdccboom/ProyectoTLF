@@ -1,12 +1,16 @@
-->Juan David
-H2A
 %->Prueba  
    muy seria
 <-%
-Clss 0Juan {
+Clss Juan% {
 	rea ( 3.25 )
-	crt samuel ~ "loca"
+	crt samuel ~ 'S'
+	->Juan David
+	txt poema ~ "Dejaste impregnado tu olor en mis recuerdos" 
 }
+
+
+
+
 
 
 
