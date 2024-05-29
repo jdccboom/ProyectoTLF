@@ -79,10 +79,10 @@ class AnalizadorDeLenguaje:
                 "Identificador de variable": {
                     "Vble":"Variable"
                 },
-                "identificador de método": {
+                "Identificador de método": {
                     "Met":"Metodo"
                 },
-                "identificador de clase": {
+                "Identificador de clase": {
                     "Clss":"Clase"
                 },
             },
@@ -124,9 +124,8 @@ class AnalizadorDeLenguaje:
         }
         # Inicializa el diccionario de palabras categorizadas
         # Lógica de categorización de palabras
-        
+        tamano=len(word)
         if (self.anteriorPalabra == ''):
-            tamano=len(word)
             if (word[0] == '"' and word[tamano-1] != '"'):
                 self.anteriorPalabra='"'
                 self.cadena=word +" "
@@ -143,7 +142,7 @@ class AnalizadorDeLenguaje:
                 self.fila=row
                 return {}
         
-        if word == '"' and self.cadena != "" :
+        if (word[tamano-1] == '"') and self.cadena != "" :
             self.cadena+=word
             self.anteriorPalabra=''
             word=self.cadena
@@ -157,7 +156,7 @@ class AnalizadorDeLenguaje:
             categorized_word["value"]=word
             self.cadena=""
         
-        tamano=len(word)
+        
         if(tamano > 2):
             if(word[tamano-3]=='<' and word[tamano-2]=="-" and word[tamano-1]=='%'):
                 self.cadena+=word
@@ -367,7 +366,7 @@ class AnalizadorDeLenguaje:
         if not (self.isLetter(texto[0])):
             return False
         for c in texto:
-            if not (self.isCaracter(c)):
+            if not (self.isLetter(c) or self.isDigito(c)):
                 return False
         return True
     

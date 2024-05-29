@@ -1,0 +1,6 @@
+%->Prueba del lenguaje de programacion<-% 
+wh ( i ME 10 ) {
+	i ~+
+	print ( i )
+}
+
